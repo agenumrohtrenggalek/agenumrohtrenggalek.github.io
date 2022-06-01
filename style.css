@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  /*warna*/
+  --hitam: #404040;
+  --putih: #f8f8ff;
+  --silver: #cfcfcf;
+  --biru: #6366f1;
+  --cyan: #4299e1;
+  /*gradasi*/
+  --gradasi1: linear-gradient(90deg, rgba(99,102,241,1) 10%, rgba(66,153,225,1) 90%);
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+/* --------------- header --------------- */
+.header{
+  background: var(--gradasi1);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+.header .container{
+  margin: auto;
+  padding: 0 15px;
+}
+.header .container .site-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .site-navbar .site-logo{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--putih);
+}
+.header .container .site-navbar .site-logo:hover{
+  color: var(--hitam);
+}
+.header .container .site-navbar ul{
+  list-style: none;
+  display: flex;
+}
+.header .container .site-navbar ul li a{
+  color: var(--putih);
+  padding: 20px;
+  display: block;
+}
+.header .container .site-navbar ul li a:hover{
+  color: var(--hitam);
+}
+.header .container .site-navbar .header-icon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+}
+.header .container .site-navbar .header-icon a i{
+  color: var(--hitam);
+  font-size: 20px;
+}
+.header .container .site-navbar .header-icon a i:hover{
+  color: var(--putih);
+}
+.header .container .site-navbar .nav-toggler{
+  border: none;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.header .container .site-navbar .nav-toggler span,
+.header .container .site-navbar .nav-toggler span:before,
+.header .container .site-navbar .nav-toggler span:after{
+  width: 28px;
+  height: 3px;
+  background: var(--putih);
+  display: block;
+  transition: .3s;
+}
+.header .container .site-navbar .nav-toggler span:before{
+  content: '';
+  transform: translateY(-9px);
+}
+.header .container .site-navbar .nav-toggler span:after{
+  content: '';
+  transform: translateY(6px);
+}
+.header .container .site-navbar .nav-toggler.toggler-open span{
+  background: transparent;
+}
+.header .container .site-navbar .nav-toggler.toggler-open span:before{
+  transform: translateY(0px) rotate(45deg);
+}
+.header .container .site-navbar .nav-toggler.toggler-open span:after{
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+/* --------------- Responsive --------------- */
+@media screen and (max-width: 768px){
+  .header .container{
+    max-width: 720px;
+  }
+  .header .container .site-navbar .nav-toggler{
+    display: block;
+  }
+  .header .container .site-navbar{
+    height: 58px;/*biar sama dengan diatas 768px*/
+  }
+  .header .container .site-navbar .site-logo{order: 2;}
+  .header .container .site-navbar .header-icon{order: 3;}
+  .header .container .site-navbar .nav-toggler{order: 1;}
+  
+  .header .container .site-navbar ul{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 58px);
+    left: 0;
+    top: 58px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--silver);
+    background: var(--hitam);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .header .container .site-navbar ul li{
+    width: 100%;
+    text-align: center;
+  }
+  .header .container .site-navbar ul li a{
+    padding: 25px;
+  }
+  .header .container .site-navbar ul li a:hover{
+    color: var(--cyan);
+  }
+  .header .container .site-navbar ul.open{
+    max-height: 100vh;
+    overflow: visible;
+  }
+}
+
+/* --------------- seksi hero image --------------- */
+.bg-hero .container{
+  height: 100vh;
+}
+
+/* --------------- seksi nav tab --------------- */
+.tabButton.active{
+  background: #f3f4f6;
+  color: #667eea;
+  border-color: #667eea;
+}
+.tabKonten{
+  display: none;
+}
+.tabKonten.active{
+  display: block;
+}
