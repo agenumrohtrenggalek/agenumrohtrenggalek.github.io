@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://agenumrohtrenggalek.github.io/</loc>
+	<lastmod>2022-08-31T05:10:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://agenumrohtrenggalek.github.io/index.html</loc>
+	<lastmod>2022-08-31T05:10:53+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/footer-bg.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/hero-image-1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/hero-image-2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/hero-image-3.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/hero-image-4.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/hero-image-5.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/ikon.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/navbar-logo.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/paket-bg.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/regular-haji-29-hari.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/regular-umroh-12-hari.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/tentang-bg.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/tunas-tours.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://agenumrohtrenggalek.github.io/gambar/</image:loc>
+	</image:image>
+	
+</url>
+</urlset>
