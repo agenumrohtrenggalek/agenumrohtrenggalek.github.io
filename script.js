@@ -68,22 +68,20 @@ tabs.forEach((tab, index) => {
     contents.forEach((content) => {
       //parameter content mengacu ke variable contents
       // console.log(content);
-      content.classList.remove('is-active');
+      content.classList.remove('aktif');
     });
     tabs.forEach((tab) =>{
-      tab.classList.remove('is-active');
+      tab.classList.remove('aktif');
     });
-    tabs[index].classList.add('is-active');
+    tabs[index].classList.add('aktif');
     // console.log(tabs[index]);
-    contents[index].classList.add('is-active');
+    contents[index].classList.add('aktif');
     // console.log(contents[index]);
   });
 });
 
 // ---------- Langganan Email ----------
 const form = document.getElementById("my-form");
-// var loaderSubEmail = document.querySelector('.loader');
-// loaderSubEmail.style.display = 'none';
 
 async function handleSubmit(event){
   event.preventDefault();  
