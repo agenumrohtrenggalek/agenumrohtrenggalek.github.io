@@ -17,8 +17,9 @@
   --nero: #1c1c1c;
 }
 body{
-  max-width: 1420px;
+  max-width: 1500px;
   margin: auto;
+  background: whitesmoke;
 }
 img{
   line-height: 0;
@@ -88,13 +89,13 @@ section{
 }
 /* ------------------------- header ------------------------- */
 .header{
-  max-width: 1420px;
+  max-width: 1500px;
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translateX(-50%);
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 3rem;
   z-index: 9998;
   display: flex;
   justify-content: space-between;
@@ -124,6 +125,9 @@ section{
 }
 /* responsive media query */
 @media (max-width: 768px){
+  .header{
+    padding: 1rem 2rem;
+  }
   .header #menu-btn{
     display: inline-block;
     z-index: 9999;
@@ -184,6 +188,9 @@ section{
   }
 }
 @media (max-width: 480px){
+  .header{
+    padding: 1rem;
+  }
   .header .navbar{
     width: 100vw;
   }
@@ -400,11 +407,7 @@ section{
 
 /* ------------------------- seksi paket ------------------------- */
 .paket{
-  background: url(gambar/paket-bg.webp);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--nero);
 }
 .paket .tabs_head{
   text-align: center;
@@ -417,6 +420,9 @@ section{
   font-weight: bold;
   background: ghostwhite;
   border-radius: 2px;
+}
+.paket .tabs_head .tabs_toggle:hover{
+  color: var(--boston-blue);
 }
 .paket .tabs_head .tabs_toggle.aktif{
   background: var(--boston-blue);
@@ -482,10 +488,10 @@ section{
 }
 @media (max-width: 480px) {
   .paket .tabs_head{
-    gap: 4px;
+    gap: 12px;
   }
   .paket .tabs_head .tabs_toggle{
-    padding: 4px 8px;
+    padding: 8px;
   }
   .paket .tabs_head .tabs_toggle span{
     display: block;
@@ -494,13 +500,8 @@ section{
 
 /* ------------------------- seksi footer ------------------------- */
 .footer{
-  padding: 4rem;
-  padding-bottom: 1rem;
-  background: url(gambar/footer-bg.webp);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 3rem 3rem 1rem;
+  background: var(--nero);
 }
 /*footer koneksi*/
 .footer .koneksi{
@@ -514,7 +515,7 @@ section{
   text-align: center;
   background: ghostwhite;
   padding: 1rem 8px;
-  border-radius: 8px;
+  border-radius: 2px;
   cursor: pointer;
 }
 .footer .koneksi .box .overlay{
@@ -698,12 +699,12 @@ section{
 }
 @media(max-width: 768px){
   .footer{
-    padding: 4rem 3rem 1rem;
+    padding: 3rem 2rem 1rem;
   }
 }
 @media(max-width: 480px){
   .footer{
-    padding: 4rem 2rem 1rem;
+    padding: 3rem 1rem;
   }
   .footer .footer-copyright .box:nth-child(2) a{
     font-size: 16px;
