@@ -59,12 +59,6 @@ html::-webkit-scrollbar-thumb{
   margin-bottom: 1rem;
   line-height: 1.75;
 }
-.main a{
-  color: var(--boston-blue);
-}
-.main a:hover{
-  color: var(--prussian-blue);
-}
 .center{
   display: flex;
   justify-content: space-evenly;
