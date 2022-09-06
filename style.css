@@ -57,6 +57,7 @@ html::-webkit-scrollbar-thumb{
 }
 .main p{
   margin-bottom: 1rem;
+  line-height: 1.75;
 }
 .main a{
   color: var(--boston-blue);
