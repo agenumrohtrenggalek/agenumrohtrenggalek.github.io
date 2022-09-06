@@ -32,8 +32,8 @@ window.addEventListener('load', () =>{
 
 // ---------- swiper js ----------
 var swiper = new Swiper(".home-slider", {
-    loop:true, 
-    grabCursor:true,
+    loop: true, 
+    grabCursor: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -41,6 +41,29 @@ var swiper = new Swiper(".home-slider", {
     autoplay: {
       delay: 5000,
     },
+});
+var swiper = new Swiper(".galeri-slider", {
+  loop: true, 
+  grabCursor: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 5000,
+  },
 });
 
 // ---------- hitung angka ----------
