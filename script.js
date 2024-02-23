@@ -131,3 +131,7 @@ async function handleSubmit(event){
   });
 }
 form.addEventListener("submit", handleSubmit);
+
+// ---------- footer copyright ----------
+const tahun = new Date().getFullYear();
+document.querySelector(".tahun").innerHTML = tahun;
